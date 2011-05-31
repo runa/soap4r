@@ -320,7 +320,7 @@ end
 
 
 # for ruby/1.6.
-unless Enumerable.instance_methods.map(&:to_sym).include?('inject')
+unless Enumerable.instance_methods.map(&:to_sym).include?(:inject)
   module Enumerable
     def inject(init)
       result = init
